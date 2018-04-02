@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+<p>welcome to {{title}}</p>
+ {{#if user}}
+<ul class="list-group" style="margin-left:10px">
+  {{# each articles}}
+  <a href="/articles/{{this._id}}" ><li class="list-group-item">{{this.title}}</li></a>
+  {{/each}}
+</ul>
+  {{else}}
+  <div class="get_started">
+    <p>welcome to Acepirit</p>
+    <a href="users/register"><button type="submit" class="btn btn-primary">Get started</button></a>
+  </div>
+  {{/if}}

@@ -1,0 +1,31 @@
+body{
+  margin: 10;
+  padding: 0px;
+  width: 98%;
+  background-image: url("/images/body.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.get_started
+{
+  width: 50%;
+  height: 50vh;
+  border-radius: 20px;
+  border: 1px solid black;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url("/images/body2.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.get_started p
+{
+  font-size: 40px;
+  color: white;
+}
+.get_started button
+{
+  position: relative;
+top: 100px;
+}

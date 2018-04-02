@@ -1,0 +1,13 @@
+
+<h1>{{title}}</h1>
+{{#if msg}}
+<div class="alert alert-success">
+            {{msg}}
+</div>
+{{/if}}
+<form id="form-group" action="/articles/edit/{{article._id}}" method="post" style="margin-left:10px">
+  <label for="title">title:<input type="text" name="title" class="form-control" value="{{article.title}}" /required>
+  <label for="author">author:<input type="text" name="author" class="form-control" value="{{article.author}}" /required></label>
+  <label for="body">body:<input type="text" name="body" class="form-control" value="{{article.body}}" /required></label>
+  <input type="submit" value="submit" class="btn-primary">
+</form>
